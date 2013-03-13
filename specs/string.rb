@@ -7,3 +7,12 @@ describe String, "#capitalize_words" do
     title.capitalize_words.should eq('Jumping Jack Flash')
   end
 end
+
+describe String, "#capitalize_words!" do
+  it "capitalizes each word of the string" do
+    title = "jUmpiNg Jack flash"
+    title.capitalize_words!
+
+    title.should eq('Jumping Jack Flash')
+  end
+end
